@@ -41,14 +41,14 @@
 	path = bundle/jspc.vim
 	url = https://github.com/othree/jspc.vim.git
 [submodule "vim-markdown"]
-	path = vim-markdown
+	path = bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
 [submodule "vim-multiple-cursors"]
-	path = vim-multiple-cursors
+	path = bundle/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
 [submodule "vim-json"]
-	path = vim-json
+	path = bundle/vim-json
 	url = https://github.com/elzr/vim-json.git
 [submodule "vim-jsx"]
-	path = vim-jsx
+	path = bundle/vim-jsx
 	url = http://github.com/mxw/vim-jsx.git
