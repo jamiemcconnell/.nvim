@@ -40,3 +40,6 @@
 [submodule "bundle/jspc.vim"]
 	path = bundle/jspc.vim
 	url = https://github.com/othree/jspc.vim.git
+[submodule "vim-markdown"]
+	path = vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
