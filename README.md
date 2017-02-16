@@ -31,6 +31,7 @@ Currently using Pathogen 2.4
 * [github.com/vim-airline/vim-airline-themes](https://github.com/vim-airline/vim-airline-themes.git)
 * [github.com/Chiel92/vim-autoformat](https://github.com/Chiel92/vim-autoformat.git)
 * [github.com/ntpeters/vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace.git)
+* [github.com/tpope/vim-five.git](https://github.com/tpope/vim-fugitive.git)
 * [github.com/airblade/vimgutter.git](https://github.com/airblade/vim-gitgutter.git)
 * [github.com/elzr/vim-json](https://github.com/elzr/vim-json.git)
 * [github.com/mxw/vim-jsx](https://github.com/mxw/vim-jsx.git)
