@@ -14,25 +14,20 @@ set background=dark
 let g:quantum_italics = 1
 let g:quantum_black = 1
 colorscheme OceanicNext
-" set guifont=Inconsolata\ for\ Powerline:h15 " This is set in the terminal
+" set guifont=RobotoMonoForPowerline-Regular:h15 " This is set in the terminal
 set guioptions-=L
 
-set autochdir " Automcatically Change Dir when opening file - saves new files to same dir
 
 " Map the leader key to SPACE
 let mapleader="\<SPACE>"
 
-" Search helpers
-
-set ruler " Show the cursor position all the time
-
-" Use <C-N> to clear the highlighting of :set hlsearch.
+" Use <C-D> to clear the highlighting of :set hlsearch.
 if maparg('<C-D>', 'd') ==# ''
   nnoremap <silent> <C-D> :nohlsearch<CR><C-L>
 endif
 
-"set noerrorbells        " No beeps!
-"set novisualbell        " No visual bell beeps!
+"set noerrorbells       " No beeps!
+"set novisualbell       " No visual bell beeps!
 set belloff=all         " Really no bells
 set showcmd             " Show (partial) command in status line.
 set ruler               " Show the line and column numbers of the cursor.
@@ -45,6 +40,7 @@ set shiftwidth=2        " Indentation amount for < and > commands.
 set softtabstop=2
 set splitright          " Vertical split to right of current.
 set nostartofline       " Do not jump to first character with page commands.
+set autochdir           " Automcatically Change Dir when opening file
 
 " speed up syntax highlighting
 set ignorecase					" Make searching case insensitive
@@ -73,9 +69,6 @@ nnoremap <Leader>f :CtrlPMRUFiles<CR> " Open most recently used files
 " Override tab width
 autocmd Filetype python setlocal ts=4 sw=4 expandtab
 "autocmd Filetype html,javascript setlocal ts=2 sw=2 expandtab
-
-" Remove all trailing whitespace on save.
-autocmd BufWritePre * %s/\s\+$//e
 
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
@@ -132,6 +125,24 @@ let g:deoplete#omni#functions.javascript = ['tern#Complete', 'jspc#omni']
 
 set completeopt=longest,menuone "preview
 let g:deoplete#sources = {}
-let g:deoplete#sources['javascript.jsx'] = ['file', 'ternjs']
+let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs']
 let g:tern#command = ['tern']
 let g:tern#arguments = ['--persistent']
+
+" Supertab for everything except Ultisnips.
+autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+let g:UltiSnipsExpandTrigger="<c-]>"
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" Auto Generate a UUID and paste it into the current cursor line.
+" https://gist.github.com/jonmorehouse/8442341
+function! GenerateUUID()
+python << EOF
+import uuid
+import vim
+vim.command("let generatedUUID = \"%s\"" % str(uuid.uuid4()))
+EOF
+:execute "normal i" . generatedUUID . ""
+endfunction
+
+
