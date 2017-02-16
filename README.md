@@ -16,6 +16,7 @@ The vim dot files make use of the excellent [Pathogen](https://github.com/tpope/
 Currently using Pathogen 2.4
 
 ## Plugins used
+* [github.com/ekalinin/Dockerfile.vim](https://github.com/ekalinin/Dockerfile.vim.git)
 * [github.com/kien/ctrlp.vim](https://github.com/kien/ctrlp.vim.git)
 * [github.com/Raimondi/delimitMate](https://github.com/Raimondi/delimitMate.git)
 * [github.com/carlitux/deoplete-ternjs](https://github.com/carlitux/deoplete-ternjs.git)
@@ -32,7 +33,8 @@ Currently using Pathogen 2.4
 * [github.com/ntpeters/vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace.git)
 * [github.com/airblade/vimgutter.git](https://github.com/airblade/vim-gitgutter.git)
 * [github.com/elzr/vim-json](https://github.com/elzr/vim-json.git)
-* [http:/hub.com/mxw/vim-jsx.git](http://github.com/mxw/vim-jsx.git)
+* [github.com/mxw/vim-jsx](https://github.com/mxw/vim-jsx.git)
+* [github.com/plasticboy/vim-markdown](https://github.com/plasticboy/vim-markdown.git)
 * [github.com/terryma/vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors.git)
 * [github.com/fatih/vim-nginx](https://github.com/fatih/vim-nginx.git)
 * [github.com/honza/vim-snippets](https://github.com/honza/vim-snippets.git)
