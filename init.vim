@@ -21,13 +21,11 @@ set guioptions-=L
 " Map the leader key to SPACE
 let mapleader="\<SPACE>"
 
-" Use <C-D> to clear the highlighting of :set hlsearch.
-if maparg('<C-D>', 'd') ==# ''
-  nnoremap <silent> <C-D> :nohlsearch<CR><C-L>
-endif
+" Clear search highlights
+map <silent> <leader><cr> :nohlsearch<cr>
 
-"set noerrorbells       " No beeps!
-"set novisualbell       " No visual bell beeps!
+set noerrorbells        " No beeps!
+set novisualbell        " No visual bell beeps!
 set belloff=all         " Really no bells
 set showcmd             " Show (partial) command in status line.
 set ruler               " Show the line and column numbers of the cursor.
@@ -41,6 +39,7 @@ set softtabstop=2
 set splitright          " Vertical split to right of current.
 set nostartofline       " Do not jump to first character with page commands.
 set autochdir           " Automcatically Change Dir when opening file
+set so=7                " Scroll n lines from the top/bottom
 
 " speed up syntax highlighting
 set ignorecase					" Make searching case insensitive
@@ -53,15 +52,14 @@ syntax sync minlines=256
 set synmaxcol=300
 set re=1
 
-" Nicer scrolling
-if !&scrolloff
-  set scrolloff=3       " Show next 3 lines while scrolling.
-endif
-if !&sidescrolloff
-  set sidescrolloff=5   " Show next 5 columns while side-scrolling.
-endif
+" Turn backup off, since most stuff is in SVN, git et.c anyway...
+set nobackup
+set nowb
+set noswapfile
 
 " CTRLP
+let g:ctrlp_max_height = 18
+let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
 nnoremap <Leader>[ :CtrlP<CR>         " Open file menu
 nnoremap <Leader>b :CtrlPBuffer<CR>   " Open buffer menu
 nnoremap <Leader>f :CtrlPMRUFiles<CR> " Open most recently used files
@@ -102,10 +100,11 @@ let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:DevIconsEnableFoldersOpenClose = 1
 " let g:NERDTreeFileExtensionHighlightFullName = 1
 
-" move between splits - Remap CTRL-H to CTRL-W-H
-nmap <C-h> <C-W>h
-" Which makes a <BS> so map <BS> to CTRL-W-H
-nmap <BS> <C-W>h
+" Smart way to move between windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 
 " Close buffers
 ":nnoremap <Leader>q :Bdelete<CR>
