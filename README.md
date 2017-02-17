@@ -6,7 +6,7 @@ My NeoVim config `nvim.init` and plugins
 Run the following commands
 ```console
 cd ~/
-git clone --recursive git@github.com:jessfraz/.vim.git .nvim
+git clone --recursive git@github.com:jamiemcconnell/.nvim.git .nvim
 ln -s $HOME/.nvim $HOME/.config/nvim
 git submodule update --init
 ```
