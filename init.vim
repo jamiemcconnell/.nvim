@@ -38,7 +38,7 @@ set shiftwidth=2        " Indentation amount for < and > commands.
 set softtabstop=2
 set splitright          " Vertical split to right of current.
 set nostartofline       " Do not jump to first character with page commands.
-set autochdir           " Automcatically Change Dir when opening file
+"set autochdir           " Automcatically Change Dir when opening file
 set so=7                " Scroll n lines from the top/bottom
 
 " speed up syntax highlighting
@@ -116,9 +116,14 @@ autocmd FileType help wincmd L
 " Fast saving
 nmap <leader>w :w!<cr>
 
+" Nicer backspace: Option-Backspace deletes word
+:imap <M-BS> <C-W>
+":imap <M-BS> <C-O>diw
+
 " Deoplete
 " https://www.gregjs.com/vim/2016/neovim-deoplete-jspc-ultisnips-and-tern-a-config-for-kickass-autocompletion/
-let g:deoplete#enable_at_startup = 1
+call deoplete#enable()
+"let g:deoplete#enable_at_startup = 1
 let g:deoplete#omni#functions = {}
 let g:deoplete#omni#functions.javascript = ['tern#Complete', 'jspc#omni']
 
@@ -132,6 +137,23 @@ let g:tern#arguments = ['--persistent']
 autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 let g:UltiSnipsExpandTrigger="<c-]>"
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" FZF
+let g:fzf_layout = { 'window': 'enew' }
+let g:fzf_layout = { 'window': '-tabnew' }
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
 
 " Auto Generate a UUID and paste it into the current cursor line.
 " https://gist.github.com/jonmorehouse/8442341
