@@ -13,7 +13,7 @@ syntax enable
 set background=dark
 let g:quantum_italics = 1
 let g:quantum_black = 1
-colorscheme OceanicNext
+colorscheme tender
 " set guifont=RobotoMonoForPowerline-Regular:h15 " This is set in the terminal
 set guioptions-=L
 
@@ -71,7 +71,7 @@ autocmd Filetype python setlocal ts=4 sw=4 expandtab
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme='dark'
+let g:airline_theme='tender'
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 

@@ -11,6 +11,12 @@ ln -s $HOME/.nvim $HOME/.config/nvim
 git submodule update --init
 ```
 
+Add a new plugin
+``` console
+cd bundle
+git submodule add <git-http-url>
+```
+
 ## Pathogen
 The vim dot files make use of the excellent [Pathogen](https://github.com/tpope/vim-pathogen) runtime path manager to install plugins and runtime files into their own private directories.
 Currently using Pathogen 2.4
