@@ -76,6 +76,3 @@
 [submodule "bundle/tender.vim"]
 	path = bundle/tender.vim
 	url = https://github.com/jamiemcconnell/tender.vim.git
-[submodule "bundle/nerdtree-git-plugin"]
-	path = bundle/nerdtree-git-plugin
-	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
