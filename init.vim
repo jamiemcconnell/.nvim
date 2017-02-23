@@ -38,7 +38,7 @@ set shiftwidth=2        " Indentation amount for < and > commands.
 set softtabstop=2
 set splitright          " Vertical split to right of current.
 set nostartofline       " Do not jump to first character with page commands.
-"set autochdir           " Automcatically Change Dir when opening file
+set autochdir           " Automcatically Change Dir when opening file
 set so=7                " Scroll n lines from the top/bottom
 
 " speed up syntax highlighting
@@ -90,7 +90,9 @@ nmap <silent>9 <Plug>AirlineSelectTab9
 
 " nerd-tree
 map <leader>- :NERDTreeToggle<CR>
+let NERDTreeChDirMode=2
 let NERDTreShowHidden=1
+let NERDTreeShowBookmarks=1
 let g:NERDTreeWinSize=45
 let g:NERDTreeAutoDeleteBuffer=1
 let NERDTreeIgnore=['\.vim$', '\~$', '\.git$', '.DS_Store']
