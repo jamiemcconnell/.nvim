@@ -1,8 +1,10 @@
 .nvim
 ======
 
-My NeoVim config `nvim.init` and plugins
+My NeoVim config `nvim.init` and plugins  
+I use [VimR](http://vimr.org/) a macOS gui wrapper for Neovim.
 
+## Setup
 Run the following commands
 ```console
 cd ~/
@@ -11,10 +13,16 @@ ln -s $HOME/.nvim $HOME/.config/nvim
 git submodule update --init
 ```
 
+## Useful commands
 Add a new plugin
 ``` console
 cd bundle
 git submodule add <git-http-url>
+```
+
+Remove a plugin
+``` console
+git rm -g <bundle/path>
 ```
 
 ## Pathogen
@@ -27,6 +35,8 @@ Currently using Pathogen 2.4
 * [github.com/Raimondi/delimitMate](https://github.com/Raimondi/delimitMate.git)
 * [github.com/carlitux/deoplete-ternjs](https://github.com/carlitux/deoplete-ternjs.git)
 * [github.com/Shougo/deoplete.nvim](https://github.com/Shougo/deoplete.nvim.git)
+* [github.com/junegunn/fzf](https://github.com/junegunn/fzf)
+* [github.com/junegunn/fzf.vim](https://github.com/junegunn/fzf.vim.git)
 * [github.com/othree/jspc.vim](https://github.com/othree/jspc.vim.git)
 * [github.com/scrooloose/nerdtree](https://github.com/scrooloose/nerdtree.git)
 * [github.com/mhartington/oceanic-next](https://github.com/mhartington/oceanic-next.git)
@@ -37,11 +47,11 @@ Currently using Pathogen 2.4
 * [github.com/vim-airline/vim-airline-themes](https://github.com/vim-airline/vim-airline-themes.git)
 * [github.com/Chiel92/vim-autoformat](https://github.com/Chiel92/vim-autoformat.git)
 * [github.com/ntpeters/vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace.git)
+* [github.com/cseelus/vim-colors-lucid](https://github.com/cseelus/vim-colors-lucid.git)
 * [github.com/tpope/vim-five.git](https://github.com/tpope/vim-fugitive.git)
 * [github.com/airblade/vimgutter.git](https://github.com/airblade/vim-gitgutter.git)
-* [github.com/elzr/vim-json](https://github.com/elzr/vim-json.git)
+* [github.com/fatih/vim-go](https://github.com/fatih/vim-go.git)
 * [github.com/mxw/vim-jsx](https://github.com/mxw/vim-jsx.git)
-* [github.com/plasticboy/vim-markdown](https://github.com/plasticboy/vim-markdown.git)
 * [github.com/terryma/vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors.git)
 * [github.com/fatih/vim-nginx](https://github.com/fatih/vim-nginx.git)
 * [github.com/honza/vim-snippets](https://github.com/honza/vim-snippets.git)
