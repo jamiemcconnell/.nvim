@@ -8,12 +8,12 @@ set encoding=utf-8
 if (has("termguicolors"))
  set termguicolors
 endif
-
 syntax enable
 set background=dark
 let g:quantum_italics = 1
 let g:quantum_black = 1
-colorscheme tender
+"let g:molokai_original = 1
+colorscheme lucid
 " set guifont=RobotoMonoForPowerline-Regular:h15 " This is set in the terminal
 set guioptions-=L
 
@@ -57,6 +57,9 @@ set nobackup
 set nowb
 set noswapfile
 
+" Remap write - I do this A LOT
+"":command W w
+
 " CTRLP
 let g:ctrlp_max_height = 18
 let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
@@ -71,7 +74,7 @@ autocmd Filetype python setlocal ts=4 sw=4 expandtab
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme='tender'
+let g:airline_theme='dark'
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
@@ -90,7 +93,7 @@ nmap <silent>9 <Plug>AirlineSelectTab9
 
 " nerd-tree
 map <leader>- :NERDTreeToggle<CR>
-let NERDTreeChDirMode=2
+let g:NERDTreeChDirMode=2
 let NERDTreShowHidden=1
 let NERDTreeShowBookmarks=1
 let g:NERDTreeWinSize=45
@@ -116,7 +119,6 @@ command! -nargs=* -complete=help Help vertical belowright help <args>
 autocmd FileType help wincmd L
 
 " Fast saving
-nmap <leader>w :w!<cr>
 
 " Nicer backspace: Option-Backspace deletes word
 :imap <M-BS> <C-W>

@@ -73,6 +73,9 @@
 [submodule "bundle/fzf"]
 	path = bundle/fzf
 	url = https://github.com/junegunn/fzf
-[submodule "bundle/tender.vim"]
-	path = bundle/tender.vim
-	url = https://github.com/jamiemcconnell/tender.vim.git
+[submodule "bundle/vim-colors-lucid"]
+	path = bundle/vim-colors-lucid
+	url = https://github.com/cseelus/vim-colors-lucid.git
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = https://github.com/fatih/vim-go.git
