@@ -10,10 +10,7 @@ if (has("termguicolors"))
 endif
 syntax enable
 set background=dark
-let g:quantum_italics = 1
-let g:quantum_black = 1
-"let g:molokai_original = 1
-colorscheme lucid
+colorscheme maui
 " set guifont=RobotoMonoForPowerline-Regular:h15 " This is set in the terminal
 set guioptions-=L
 
