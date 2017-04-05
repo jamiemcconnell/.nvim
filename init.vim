@@ -34,6 +34,7 @@ set tabstop=2           " Render TABs using this many spaces.
 set shiftwidth=2        " Indentation amount for < and > commands.
 set softtabstop=2
 set splitright          " Vertical split to right of current.
+set splitbelow
 set nostartofline       " Do not jump to first character with page commands.
 set autochdir           " Automcatically Change Dir when opening file
 set so=7                " Scroll n lines from the top/bottom
@@ -60,9 +61,9 @@ set noswapfile
 " CTRLP
 let g:ctrlp_max_height = 18
 let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
-nnoremap <Leader>[ :CtrlP<CR>         " Open file menu
+nnoremap <Leader>f :CtrlP<CR>         " Open file menu
 nnoremap <Leader>b :CtrlPBuffer<CR>   " Open buffer menu
-nnoremap <Leader>f :CtrlPMRUFiles<CR> " Open most recently used files
+nnoremap <Leader>r :CtrlPMRUFiles<CR> " Open most recently used files
 
 " Override tab width
 autocmd Filetype python setlocal ts=4 sw=4 expandtab
@@ -167,4 +168,13 @@ EOF
 :execute "normal i" . generatedUUID . ""
 endfunction
 
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
 
