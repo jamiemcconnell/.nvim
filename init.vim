@@ -94,7 +94,7 @@ nmap <silent>9 <Plug>AirlineSelectTab9
 " nerd-tree
 map <leader>- :NERDTreeToggle<CR>
 let g:NERDTreeChDirMode=2
-let NERDTreShowHidden=1
+let NERDTreeShowHidden=1
 let NERDTreeShowBookmarks=1
 let g:NERDTreeWinSize=45
 let g:NERDTreeAutoDeleteBuffer=1
