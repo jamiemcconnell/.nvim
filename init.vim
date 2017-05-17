@@ -11,9 +11,8 @@ endif
 syntax enable
 set background=dark
 let ayucolor="dark"
-"let ayucolor="mirage"
-colorscheme ayu "maui
-" set guifont=RobotoMonoForPowerline-Regular:h15 " This is set in the terminal
+colorscheme base16-tomorrow-night
+set guifont=RobotoMonoForPowerline-Regular:h15 " This is set in the terminal
 set guioptions-=L
 
 
