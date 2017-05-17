@@ -39,6 +39,7 @@ set splitbelow
 set nostartofline       " Do not jump to first character with page commands.
 set autochdir           " Automcatically Change Dir when opening file
 set so=7                " Scroll n lines from the top/bottom
+set mouse=a
 
 " speed up syntax highlighting
 set ignorecase					" Make searching case insensitive
