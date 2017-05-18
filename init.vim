@@ -98,7 +98,7 @@ let NERDTreeShowHidden=1
 let NERDTreeShowBookmarks=1
 let g:NERDTreeWinSize=45
 let g:NERDTreeAutoDeleteBuffer=1
-let NERDTreeIgnore=['\.vim$', '\~$', '\.git$', '.DS_Store']
+let NERDTreeIgnore=['\.vim$', '\~$', '\.git$', '.DS_Store', '.tern-port']
 
 let g:webdevicons_enable_nerdtree = 0
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
