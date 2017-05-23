@@ -11,7 +11,7 @@ endif
 syntax enable
 set background=dark
 let ayucolor="dark"
-colorscheme base16-tomorrow-night
+colorscheme base16-bright "base16-tomorrow-night
 set guifont=RobotoMonoForPowerline-Regular:h15 " This is set in the terminal
 set guioptions-=L
 
@@ -58,7 +58,7 @@ set nowb
 set noswapfile
 
 " Remap write - I do this A LOT
-"":command W w
+cmap W w
 
 " CTRLP
 let g:ctrlp_max_height = 18
