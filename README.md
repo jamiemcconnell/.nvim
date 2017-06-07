@@ -60,8 +60,12 @@ Currently using Pathogen 2.4
 * [github.com/pangloss/vim-javascript](https://github.com/pangloss/vim-javascript.git)
 * [github.com/MaxMEllon/vim-jsx-pretty](https://github.com/MaxMEllon/vim-jsx-pretty.git)
 * [github.com/terryma/vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors.git)
+* [github.com/mustache/vim-mustache-handlebars](https://github.com/mustache/vim-mustache-handlebars.git)
 * [github.com/fatih/vim-nginx](https://github.com/fatih/vim-nginx.git)
+* [github.com/rodjek/vim-puppet](https://github.com/rodjek/vim-puppet.git)
 * [github.com/honza/vim-snippets](https://github.com/honza/vim-snippets.git)
+* [github.com/christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator.git)
 * [github.com/cespare/vim-toml](https://github.com/cespare/vim-toml.git)
 * [github.com/othree/yajs.vim](https://github.com/othree/yajs.vim.git)
 * [github.com/HerringtonDarkholme/yats.vim](https://github.com/HerringtonDarkholme/yats.vim.git)
+
