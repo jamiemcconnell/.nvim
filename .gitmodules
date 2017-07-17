@@ -88,9 +88,6 @@
 [submodule "bundle/undotree"]
 	path = bundle/undotree
 	url = https://github.com/mbbill/undotree.git
-[submodule "bundle/vim-jsx-pretty"]
-	path = bundle/vim-jsx-pretty
-	url = https://github.com/MaxMEllon/vim-jsx-pretty.git
 [submodule "bundle/ayu-theme"]
 	path = bundle/ayu-theme
 	url = https://github.com/ayu-theme/ayu-vim.git
@@ -112,3 +109,6 @@
 [submodule "bundle/vim-puppet"]
 	path = bundle/vim-puppet
 	url = https://github.com/rodjek/vim-puppet.git
+[submodule "bundle/vim-jsx-improve"]
+	path = bundle/vim-jsx-improve
+	url = https://github.com/neoclide/vim-jsx-improve.git
