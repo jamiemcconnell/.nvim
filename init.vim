@@ -1,18 +1,20 @@
 execute pathogen#infect()
 
 filetype plugin indent on
-syntax on
+syntax enable
 
 " Theming
 set encoding=utf-8
 if (has("termguicolors"))
  set termguicolors
 endif
-syntax enable
+"set background=dark
+"let ayucolor="dark"
+set t_Co=256
+let g:solarized_termcolors=256
 set background=dark
-let ayucolor="dark"
 colorscheme base16-bright "base16-tomorrow-night
-set guifont=RobotoMonoForPowerline-Regular:h15 " This is set in the terminal
+"set guifont=RobotoMonoForPowerline-Regular:h15 " This is set in the terminal
 set guioptions-=L
 
 
