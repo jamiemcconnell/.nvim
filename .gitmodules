@@ -16,9 +16,6 @@
 [submodule "pathogenBundles/vim-autoformat"]
 	path = bundle/vim-autoformat
 	url = https://github.com/Chiel92/vim-autoformat.git
-[submodule "pathogenBundles/oceanic-next"]
-	path = bundle/oceanic-next
-	url = https://github.com/mhartington/oceanic-next.git
 [submodule "pathogenBundles/vim-gitgutter"]
 	path = bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
@@ -73,21 +70,12 @@
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
-[submodule "bundle/maui"]
-	path = bundle/maui
-	url = https://github.com/zsoltf/vim-maui.git
 [submodule "bundle/nerdtree-git-plugin"]
 	path = bundle/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/vim-syntastic/syntastic.git
-[submodule "bundle/undotree"]
-	path = bundle/undotree
-	url = https://github.com/mbbill/undotree.git
-[submodule "bundle/ayu-theme"]
-	path = bundle/ayu-theme
-	url = https://github.com/ayu-theme/ayu-vim.git
 [submodule "bundle/vim-javascript"]
 	path = bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
@@ -109,3 +97,9 @@
 [submodule "bundle/vim-jsx-improve"]
 	path = bundle/vim-jsx-improve
 	url = https://github.com/neoclide/vim-jsx-improve.git
+[submodule "bundle/ag.vim"]
+	path = bundle/ag.vim
+	url = https://github.com/rking/ag.vim.git
+[submodule "bundle/vim-jst"]
+	path = bundle/vim-jst
+	url = https://github.com/briancollins/vim-jst
