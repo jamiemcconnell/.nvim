@@ -39,6 +39,7 @@ Currently using Pathogen 2.4
 * [github.com/Shougo/deoplete.nvim](https://github.com/Shougo/deoplete.nvim.git)
 * [github.com/junegunn/fzf](https://github.com/junegunn/fzf)
 * [github.com/junegunn/fzf.vim](https://github.com/junegunn/fzf.vim.git)
+* [github.com/othree/javascript-libraries-syntax.vim](https://github.com/othree/javascript-libraries-syntax.vim.git)
 * [github.com/othree/jspc.vim](https://github.com/othree/jspc.vim.git)
 * [github.com/scrooloose/nerdtree](https://github.com/scrooloose/nerdtree.git)
 * [github.com/Xuyuanp/nerdtree-plugin.git](https://github.com/Xuyuanp/nerdtree-git-plugin.git)
@@ -67,4 +68,3 @@ Currently using Pathogen 2.4
 * [github.com/cespare/vim-toml](https://github.com/cespare/vim-toml.git)
 * [github.com/othree/yajs.vim](https://github.com/othree/yajs.vim.git)
 * [github.com/HerringtonDarkholme/yats.vim](https://github.com/HerringtonDarkholme/yats.vim.git)
-
