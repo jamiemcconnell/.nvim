@@ -109,3 +109,6 @@
 [submodule "bundle/vim-colors-solarizer"]
 	path = bundle/vim-colors-solarizer
 	url = https://github.com/altercation/vim-colors-solarized
+[submodule "bundle/javascript-libraries-syntax.vim"]
+	path = bundle/javascript-libraries-syntax.vim
+	url = https://github.com/othree/javascript-libraries-syntax.vim.git
