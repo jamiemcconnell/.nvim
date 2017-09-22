@@ -18,11 +18,11 @@ syntax enable
 " Theming
 set encoding=utf-8
 set t_Co=256
-colorscheme base16-bright "base16-tomorrow-night
-set background=light
+let base16colorspace=256
+set background=dark
+colorscheme base16-monokai "base16-tomorrow-night
 "set guifont=RobotoMonoForPowerline-Regular:h15 " This is set in the terminal
 set guioptions-=L
-
 
 " Map the leader key to SPACE
 let mapleader="\<SPACE>"
@@ -48,6 +48,7 @@ set nostartofline       " Do not jump to first character with page commands.
 set autochdir           " Automcatically Change Dir when opening file
 set so=7                " Scroll n lines from the top/bottom
 set mouse=a
+set nonumber
 
 " speed up syntax highlighting
 set ignorecase					" Make searching case insensitive
