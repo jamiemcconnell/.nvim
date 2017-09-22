@@ -103,12 +103,6 @@
 [submodule "bundle/vim-jst"]
 	path = bundle/vim-jst
 	url = https://github.com/briancollins/vim-jst
-[submodule "bundle/vim-one"]
-	path = bundle/vim-one
-	url = git@github.com:rakr/vim-one.git
-[submodule "bundle/vim-colors-solarizer"]
-	path = bundle/vim-colors-solarizer
-	url = https://github.com/altercation/vim-colors-solarized
 [submodule "bundle/javascript-libraries-syntax.vim"]
 	path = bundle/javascript-libraries-syntax.vim
 	url = https://github.com/othree/javascript-libraries-syntax.vim.git
